@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/57fb3a03b8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
     <title>Text Previewer</title>
@@ -14,29 +15,80 @@
     <header>
         <h2>Fonts</h2>
         <p id="fonts">
-            <label for="heading-font">Heading</label><input type="text" id="heading-font" />
-            <label for="body-font">Body</label><input type="text" id="body-font" />
+            <label for="heading-font">Heading</label><select type="text" id="heading-font"></select>
+            <label for="body-font">Body</label><select type="text" id="body-font"></select>
         </p>
     </header>
     <main>
         <section id="settings">
             <section id="formatting">
                 <h2>Colors</h2>
-                <p id="colors">
-                    <label for="heading-color" value="#000000">Heading</label><input type="color" id="heading-color" />
-                    <label for="body-color" value="#000000">Body</label><input type="color" id="body-color" />
-                    <label for="bg-color" value="#ffffff">Background</label><input type="color" id="bg-color" />
-                </p>
+                <div id="colors">
+                    <div>
+                        <label for="heading-color">Heading</label>
+                        <input type="color" id="heading-color" value="#000000" />
+                        <input type="text" id="heading-color-text" value="#000000" />
+                    </div>
+                
+                    <div>
+                        <label for="body-color">Body</label>
+                        <input type="color" id="body-color" value="#000000" />
+                        <input type="text" id="body-color-text" value="#000000" />
+                    </div>
+                
+                    <div>
+                        <label for="bg-color" value="#ffffff">Background</label>
+                        <input type="color" id="bg-color" value="#000000" />
+                        <input type="text" id="bg-color-text" value="#000000" />
+                    </div>
+                </div>
                 <h2>Sizes (px)</h2>
-                <p id="sizes">
+                <div id="sizes">
                     <label for="heading-size">Heading</label><input type="number" id="heading-size" />
                     <label for="body-size">Body</label><input type="number" id="body-size" />
-                </p>
+                </div>
                 <h2>Alignment</h2>
-                <p id="alignments">
-                    <label for="heading-alignment">Heading</label><input type="number" id="heading-alignment" />
-                    <label for="body-alignment">Body</label><input type="number" id="body-alignment" />
-                </p>
+                <div id="alignment">
+                    <div id="heading-aligment-picker">
+                        <span>Heading</span>
+                        <input type="radio" name="heading-alignment" value="left" id="heading-left" checked />
+                        <label for="heading-left">
+                            <i class="fa-solid fa-align-left"></i>
+                        </label>
+                        <input type="radio" name="heading-alignment" value="center" id="heading-center" />
+                        <label for="heading-center">
+                            <i class="fa-solid fa-align-center"></i>
+                        </label>
+                        <input type="radio" name="heading-alignment" value="right" id="heading-right" />
+                        <label for="heading-right">
+                            <i class="fa-solid fa-align-right"></i>
+                    </div>
+                
+                
+                    <div id="body-aligment-picker">
+                        <span>Body</span>
+                        <input type="radio" name="body-alignment" value="left" id="body-left" checked />
+                        <label for="body-left">
+                            <i class="fa-solid fa-align-left"></i>
+                        </label>
+                        <input type="radio" name="body-alignment" value="center" id="body-center" />
+                        <label for="body-center">
+                            <i class="fa-solid fa-align-center"></i>
+                        </label>
+                        <input type="radio" name="body-alignment" value="justify" id="body-right" />
+                        <label for="heabodyding-justify">
+                            <i class="fa-solid fa-align-justify"></i>
+                        </label>
+                        <label for="body-center">
+                            <i class="fa-solid fa-align-center"></i>
+                        </label>
+                        <input type="radio" name="body-alignment" value="right" id="body-right" />
+                        <label for="heabodyding-right">
+                            <i class="fa-solid fa-align-right"></i>
+                        </label>
+                    </div>
+                
+                </div>
             </section>
             <section id="text">
                 <h2>Text</h2>
@@ -54,6 +106,7 @@
             target="_blank">Google Fonts
             API</a>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="main.js" type="module"></script>
 </body>
 

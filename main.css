@@ -56,15 +56,30 @@ main section {
     margin-bottom: 1rem;
 }
 
+#heading-text {
+    width: 90%;
+}
 textarea {
     width: 90%;
-    height: 300px;
+    height: 250px;
 }
 
-#colors,
-#sizes,
-#alignments {
+#colors {
     display: flex;
+}
+
+#colors div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#colors input {
+    width: 75%;
+}
+
+#alignment input {
+    display: none;
 }
 
 

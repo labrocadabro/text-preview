@@ -45,7 +45,7 @@ export const ipsum = [
     },
     {
         heading: "Bluth Ipsum",
-        body: "I need a fake passport, preferably to France... I like the way they think. Do you have any idea how often you say the word 'afraid'? Well, I know I used it in the Jacuzzi. The worst that could happen is that I could spill coffee all over this $3,000 suit. COME ON. She's a girl, I need to teach her how to be a woman. Within her lies a queen. Let me out that queen. Happy Franklin Friday. It's, like, Hey, you want to go down to the whirlpool? Yeah, I don't have a husband. I call it Swing City. And I wouldn't just lie there, if that's what you're thinking.That's NOT what I was thinking."
+        body: "I need a fake passport, preferably to France... I like the way they think. Do you have any idea how often you say the word 'afraid'? Well, I know I used it in the Jacuzzi. The worst that could happen is that I could spill coffee all over this $3,000 suit. COME ON. She's a girl, I need to teach her how to be a woman. Within her lies a queen. Let me out that queen. Happy Franklin Friday. It's, like, Hey, you want to go down to the whirlpool? Yeah, I don't have a husband. I call it Swing City. And I wouldn't just lie there, if that's what you're thinking. That's NOT what I was thinking."
     },
     {
         heading: "Heisenberg Ipsum",
@@ -64,7 +64,7 @@ export const ipsum = [
         body: "Seeing that my client was anxious to leave, I said no more but, calling for my cashier, I ordered him to pay over fifty 1000 pound notes. When I was alone once more, however, with the precious case lying upon the table in front of me, I could not but think with some misgivings of the immense responsibility which it entailed upon me. There could be no doubt that, as it was a national possession, a horrible scandal would ensue if any misfortune should occur to it. I already regretted having ever consented to take charge of it. However, it was too late to alter the matter now, so I locked it up in my private safe and turned once more to my work."
     },
     {
-        heading: "The Picture of Dorian Ipsum",
+        heading: "The Ipsum of Dorian Gray",
         body: "Play me a nocturne, Dorian, and, as you play, tell me, in a low voice, how you have kept your youth. You must have some secret. I am only ten years older than you are, and I am wrinkled, and worn, and yellow. You are really wonderful, Dorian. You have never looked more charming than you do to-night. You remind me of the day I saw you first. You were rather cheeky, very shy, and absolutely extraordinary. You have changed, of course, but not in appearance. I wish you would tell me your secret. To get back my youth I would do anything in the world, except take exercise, get up early, or be respectable."
     },
     {
