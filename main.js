@@ -30,6 +30,8 @@ function preview() {
     bgColorText.value = bgColor.value;
     heading.style.fontSize = `${headingSize.value}px`;
     body.style.fontSize = `${bodySize.value}px`;
+    heading.style.textAlign = Array.from(headingAlignment).find(el => el.checked).value;
+    body.style.textAlign = Array.from(bodyAlignment).find(el => el.checked).value;
     loadFont(headingFont.value);
     heading.style.fontFamily = headingFont.value;
     loadFont(bodyFont.value);
@@ -56,6 +58,9 @@ const headingSize = document.getElementById('heading-size');
 const bodySize = document.getElementById('body-size');
 const headingFont = document.getElementById('heading-font');
 const bodyFont = document.getElementById('body-font');
+const headingAlignment = document.getElementsByName('heading-alignment');
+const bodyAlignment = document.getElementsByName('body-alignment');
+
 
 // preview
 const bg = document.getElementById('preview');
@@ -77,6 +82,8 @@ headingSize.addEventListener('change', preview);
 bodySize.addEventListener('change', preview);
 headingFont.addEventListener('change', preview);
 bodyFont.addEventListener('change', preview);
+headingAlignment.forEach(el => el.addEventListener('click', preview));
+bodyAlignment.forEach(el => el.addEventListener('click', preview));
 
 // update colors pickers when color text field changes
 headingColorText.addEventListener('change', updatePicker);
