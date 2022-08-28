@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Text Previewer</title>
+</head>
+
+<body>
+    <header>
+        <h2>Fonts</h2>
+        <p id="fonts">
+            <label for="heading-font">Heading</label><input type="text" id="heading-font" />
+            <label for="body-font">Body</label><input type="text" id="body-font" />
+        </p>
+    </header>
+    <main>
+        <section id="settings">
+            <section id="formatting">
+                <h2>Colors</h2>
+                <p id="colors">
+                    <label for="heading-color" value="#000000">Heading</label><input type="color" id="heading-color" />
+                    <label for="body-color" value="#000000">Body</label><input type="color" id="body-color" />
+                    <label for="bg-color" value="#ffffff">Background</label><input type="color" id="bg-color" />
+                </p>
+                <h2>Sizes (px)</h2>
+                <p id="sizes">
+                    <label for="heading-size">Heading</label><input type="number" id="heading-size" />
+                    <label for="body-size">Body</label><input type="number" id="body-size" />
+                </p>
+                <h2>Alignment</h2>
+                <p id="alignments">
+                    <label for="heading-alignment">Heading</label><input type="number" id="heading-alignment" />
+                    <label for="body-alignment">Body</label><input type="number" id="body-alignment" />
+                </p>
+            </section>
+            <section id="text">
+                <h2>Text</h2>
+                <p><label for="heading-text">Heading</label><input type="text" id="heading-text" /></p>
+                <p><label for="body-text">Body</label><textarea id="body-text"></textarea></p>
+            </section>
+        </section>
+        <section id="preview">
+            <h1 id="heading"></h1>
+            <p id="body"></p>
+        </section>
+    </main>
+    <footer>
+        <a href="ipsums.html">Ipsums</a> | <a href="https://developers.google.com/fonts/docs/developer_api"
+            target="_blank">Google Fonts
+            API</a>
+    </footer>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
