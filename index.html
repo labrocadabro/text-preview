@@ -14,77 +14,88 @@
 <body>
     <header>
         <h2>Fonts</h2>
-        <p id="fonts">
-            <label for="heading-font">Heading</label><select type="text" id="heading-font"></select>
-            <label for="body-font">Body</label><select type="text" id="body-font"></select>
-        </p>
+        <div id="fonts">
+            <i class="fa-solid fa-play" id="heading-browse"></i>
+            <label for="heading-font">Heading</label>
+            <select type="text" id="heading-font"></select>
+            <a href="" target="_blank">Link</a>
+            <i class="fa-solid fa-play" id="body-browse"></i>
+            <label for="body-font">Body</label>
+            <select type="text" id="body-font"></select>
+            <a href="" target="_blank">Link</a>
+        </div>
     </header>
     <main>
         <section id="settings">
             <section id="formatting">
                 <h2>Colors</h2>
                 <div id="colors">
-                    <div>
+                    <div class="swatch">
                         <label for="heading-color">Heading</label>
                         <input type="color" id="heading-color" value="#000000" />
-                        <input type="text" id="heading-color-text" value="#000000" />
+                        <input type="text" id="heading-color-text" class="color-text" value="#000000" />
                     </div>
                 
-                    <div>
+                    <div class="swatch">
                         <label for="body-color">Body</label>
                         <input type="color" id="body-color" value="#000000" />
-                        <input type="text" id="body-color-text" value="#000000" />
+                        <input type="text" id="body-color-text" class="color-text" value="#000000" />
                     </div>
                 
-                    <div>
+                    <div class="swatch">
                         <label for="bg-color" value="#ffffff">Background</label>
-                        <input type="color" id="bg-color" value="#000000" />
-                        <input type="text" id="bg-color-text" value="#000000" />
+                        <input type="color" id="bg-color" value="#cccccc" />
+                        <input type="text" id="bg-color-text" class="color-text" value="#cccccc" />
                     </div>
                 </div>
                 <h2>Sizes (px)</h2>
                 <div id="sizes">
-                    <label for="heading-size">Heading</label><input type="number" id="heading-size" />
-                    <label for="body-size">Body</label><input type="number" id="body-size" />
+                    <div>
+                        <label for="heading-size">Heading</label>
+                        <input type="number" id="heading-size" value="30" />
+                    </div>
+                    <div>
+                        <label for="body-size">Body</label>
+                        <input type="number" id="body-size" value="20" />
+                    </div>
+                    <div></div>
                 </div>
                 <h2>Alignment</h2>
                 <div id="alignment">
                     <div id="heading-aligment-picker">
                         <span>Heading</span>
-                        <input type="radio" name="heading-alignment" value="left" id="heading-left" checked />
-                        <label for="heading-left">
+                        <input type="radio" name="heading-alignment" value="left" id="heading-alignment-left" checked />
+                        <label for="heading-alignment-left">
                             <i class="fa-solid fa-align-left"></i>
                         </label>
-                        <input type="radio" name="heading-alignment" value="center" id="heading-center" />
-                        <label for="heading-center">
+                        <input type="radio" name="heading-alignment" value="center" id="heading-alignment-center" />
+                        <label for="heading-alignment-center">
                             <i class="fa-solid fa-align-center"></i>
                         </label>
-                        <input type="radio" name="heading-alignment" value="right" id="heading-right" />
-                        <label for="heading-right">
+                        <input type="radio" name="heading-alignment" value="right" id="heading-alignment-right" />
+                        <label for="heading-alignment-right">
                             <i class="fa-solid fa-align-right"></i>
-                    </div>
-                
-                
+                        </div>
                     <div id="body-aligment-picker">
                         <span>Body</span>
-                        <input type="radio" name="body-alignment" value="left" id="body-left" checked />
-                        <label for="body-left">
+                        <input type="radio" name="body-alignment" value="left" id="body-alignment-left" checked />
+                        <label for="body-alignment-left">
                             <i class="fa-solid fa-align-left"></i>
                         </label>
-                        <input type="radio" name="body-alignment" value="center" id="body-center" />
-                        <label for="body-center">
+                        <input type="radio" name="body-alignment" value="center" id="body-alignment-center" />
+                        <label for="body-alignment-center">
                             <i class="fa-solid fa-align-center"></i>
                         </label>
-                        <input type="radio" name="body-alignment" value="justify" id="body-justify" />
-                        <label for="body-justify">
+                        <input type="radio" name="body-alignment" value="justify" id="body-alignment-justify" />
+                        <label for="body-alignment-justify">
                             <i class="fa-solid fa-align-justify"></i>
                         </label>
-                        <input type="radio" name="body-alignment" value="right" id="body-right" />
-                        <label for="body-right">
+                        <input type="radio" name="body-alignment" value="right" id="body-alignment-right" />
+                        <label for="body-alignment-right">
                             <i class="fa-solid fa-align-right"></i>
                         </label>
                     </div>
-                
+                    <div></div>
                 </div>
             </section>
             <section id="text">
