@@ -1,11 +1,12 @@
 import React from 'react';
+import FontBrowser from './settings/FontBrowser';
 
 const Header: React.FC = () => {
   return (
-    <>
-
-			App
-    </>
+    <header>
+			<FontBrowser />
+			<FontBrowser />
+    </header>
   );
 }
 
