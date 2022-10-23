@@ -1,4 +1,4 @@
-import { ipsum } from './ipsum.js';
+import { ipsum } from '../src/data/ipsum.js';
 
 async function getFonts() {
     // this api key is restricted to the google fonts api and one domain
