@@ -8,8 +8,10 @@ const App: React.FC = () => {
   return (
     <>
 			<Header />
-			<Settings />
-			<Preview />
+			<main className="flex text-3xl">
+				<Settings />
+				<Preview />
+			</main>
 			<Footer />
     </>
   );
