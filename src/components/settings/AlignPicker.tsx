@@ -1,6 +1,4 @@
-import React from 'react';
-
-const AlignPicker: React.FC = () => {
+function AlignPicker() {
   return (
     <div className="alignment">
 			Align

@@ -1,6 +1,4 @@
-import React from 'react';
-
-const ColorPicker: React.FC = () => {
+function ColorPicker() {
   return (
     <div className="color">
 			Color

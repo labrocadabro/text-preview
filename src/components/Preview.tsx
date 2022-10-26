@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Preview: React.FC = () => {
+function Preview() {
   return (
     <section id="preview">
 			Preview

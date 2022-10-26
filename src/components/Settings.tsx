@@ -1,10 +1,9 @@
-import React from 'react';
 import ColorPicker from './settings/ColorPicker';
 import SizePicker from "./settings/SizePicker";
 import AlignPicker from "./settings/AlignPicker";
 import TextPicker from './settings/TextPicker';
 
-const Settings: React.FC = () => {
+function Settings() {
   return (
   	<section id="settings">
 			<h2>Colors</h2>

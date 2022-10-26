@@ -1,11 +1,13 @@
-import React from 'react';
 import FontBrowser from './settings/FontBrowser';
 
-const Header: React.FC = () => {
+function Header() {
   return (
-    <header>
-			<FontBrowser />
-			<FontBrowser />
+    <header className="sticky top-0 border-b flex flex-col items-center py-4 z-10 bg-white">
+			<h2>Fonts</h2>
+			<div id="fonts" className="grid grid-cols-[auto_1fr_auto] gap-2 items-center">
+				<FontBrowser text="heading" />
+				<FontBrowser text="body" />
+			</div>
     </header>
   );
 }

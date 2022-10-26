@@ -1,6 +1,4 @@
-import React from 'react';
-
-const SizePicker: React.FC = () => {
+function SizePicker() {
   return (
     <div className="size">
 			Size

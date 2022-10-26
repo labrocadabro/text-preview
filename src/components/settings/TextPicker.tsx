@@ -1,6 +1,4 @@
-import React from 'react';
-
-const TextPicker: React.FC = () => {
+function TextPicker() {
   return (
     <div id="text">
 			Text
